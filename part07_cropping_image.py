@@ -9,10 +9,15 @@ img_path = str(Path('C:\\Users\\Alkashi\\Desktop\\ML_Project\\Open_CV\\images\\i
 img = cv2.imread(f'{img_path}')
 img = cv2.resize(img,(600,600))
 
+# Croping the image
+img_crop = img[0:300,0:500]
+
 # Display the image.
-cv2.imshow('Original Color',img)
+cv2.imshow('Original Color',img_crop)
 
 # Hold the display.
 cv2.waitKey(0)
+
+
 
  
